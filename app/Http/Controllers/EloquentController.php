@@ -16,7 +16,8 @@ class EloquentController extends Controller
             'roles',
             'posts.comments'
         ])->get();
-
+        $user = User::find(1);
+        $user->roles()->toggle(['EDITOR' => ['description' => 'my custom']]);die;
         $posts = Post::with('user')->get();
         $phones = Phone::with('user')->get();
         echo "<pre>";
