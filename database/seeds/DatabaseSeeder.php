@@ -77,9 +77,9 @@ class DatabaseSeeder extends Seeder
 
         Comment::insert([
             ['id' => 1, 'content' => 'my comment 1', 'parent_comment_id' => null, 'post_id' => 1, 'commenter_id' => 1, 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 2, 'content' => 'my comment 2', 'parent_comment_id' => 1, 'post_id' => 1, 'commenter_id' => 2, 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 2, 'content' => 'my comment 2', 'parent_comment_id' => 1, 'post_id' => 2, 'commenter_id' => 2, 'created_at' => now(), 'updated_at' => now()],
             ['id' => 3, 'content' => 'my comment 3', 'parent_comment_id' => null, 'post_id' => 1, 'commenter_id' => 2, 'created_at' => now(), 'updated_at' => now()],
-            ['id' => 4, 'content' => 'my comment 4', 'parent_comment_id' => null, 'post_id' => 1, 'commenter_id' => 1, 'created_at' => now(), 'updated_at' => now()],
+            ['id' => 4, 'content' => 'my comment 4', 'parent_comment_id' => null, 'post_id' => 3, 'commenter_id' => 1, 'created_at' => now(), 'updated_at' => now()],
             ['id' => 5, 'content' => 'my comment 5', 'parent_comment_id' => 1, 'post_id' => 1, 'commenter_id' => 3, 'created_at' => now(), 'updated_at' => now()],
             ['id' => 6, 'content' => 'my comment 6', 'parent_comment_id' => null, 'post_id' => 2, 'commenter_id' => 4, 'created_at' => now(), 'updated_at' => now()],
             ['id' => 7, 'content' => 'my comment 7', 'parent_comment_id' => 6, 'post_id' => 2, 'commenter_id' => 3, 'created_at' => now(), 'updated_at' => now()],
