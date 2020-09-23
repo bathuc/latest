@@ -3,18 +3,23 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Page Title</title>
+    <title>@yield('page_title', 'Latest')</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" type="image/png" href="/favicon.png">
 
-    <link rel="stylesheet" href="{{ asset('front/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{ asset('front/css/style.css')}}">
+    <link rel="stylesheet" href="{{ app_asset('vendors.css') }}">
+    <link rel="stylesheet" href="{{ app_asset('app.css') }}">
 
-    <script src="{{ asset('front/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('front/js/jquery.validate.js') }}"></script>
-    <script src="{{ asset('front/js/popper.min.js') }}"></script>
-    <script src="{{ asset('front/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('front/js/common.js') }}"></script>
 </head>
 <body>
+    @include('shared.toast')
 
+    @yield('body')
+
+    <script src="{{ app_asset('manifest.js') }}"></script>
+    <script src="{{ app_asset('vendors.js') }}"></script>
+    <script src="{{ app_asset('app.js') }}"></script>
+
+    @stack('scripts')
 </body>
 </html>

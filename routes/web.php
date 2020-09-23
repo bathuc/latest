@@ -13,4 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/eloquent', 'EloquentController@eloquent')->name('eloquent');
-Route::get('/bootstrap', 'BootstrapController@jum')->name('bootstrap.jum');
+Route::get('/jum', 'BootstrapController@jum')->name('bootstrap.jum');
