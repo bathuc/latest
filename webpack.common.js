@@ -37,6 +37,16 @@ module.exports = (env, options) => {
                             }
                         },
                         {
+                            loader: 'postcss-loader', options: {
+                                sourceMap: true,
+                                config: {
+                                    ctx: {
+                                        mode: options.mode
+                                    }
+                                }
+                            }
+                        },
+                        {
                             loader: 'sass-loader',
                             options: {
                                 sourceMap: true,
