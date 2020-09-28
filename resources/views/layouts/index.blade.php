@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ app_asset('app.css') }}">
 
 </head>
-<body>
+<body class="@yield('body-class')">
     @include('shared.toast')
 
     @yield('body')

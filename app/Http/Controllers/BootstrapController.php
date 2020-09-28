@@ -8,7 +8,11 @@ class BootstrapController extends Controller
 {
     public function jum()
     {
-        return view('bootstrap.jum');
+        return view('bootstrap.example.jum');
     }
 
+    public function classUtility()
+    {
+        return view('bootstrap.class.class');
+    }
 }
