@@ -3,6 +3,8 @@
 namespace App\Exceptions;
 
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+//use Sentry\Laravel\Facade as Sentry;
+//use Sentry\State\Scope;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -36,6 +38,13 @@ class Handler extends ExceptionHandler
      */
     public function report(Throwable $exception)
     {
+        /*if (app()->bound('sentry') && $this->shouldReport($exception)) {
+            Sentry::configureScope(function (Scope $scope): void {
+                $scope->setUser(['ip_address' => request()->ip()]); // Ref bug: https://github.com/getsentry/sentry-laravel/issues/133
+            });
+
+            app('sentry')->captureException($exception);
+        }*/
         parent::report($exception);
     }
 
