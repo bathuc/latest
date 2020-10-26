@@ -8,6 +8,7 @@ global.Cookies = $.cookie = global.Cookies = require('js-cookie');
 require('lazysizes');
 require('bootstrap');
 require('bootstrap-datepicker');
+require('parsleyjs');
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
