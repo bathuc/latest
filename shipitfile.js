@@ -171,9 +171,9 @@ module.exports = function (shipit) {
 
     function syncAssetsToRemote() {
         return shipit.local('git checkout ' + _getTargetBranch() + ' && npm run build')
-            .then(() => shipit.remote('sudo rm -rf /tmp/core.iconic-intl.com-dist/', {tty: true}))
-            .then(() => shipit.copyToRemote('public/dist/*', '/tmp/core.iconic-intl.com-dist/'))
-            .then(() => shipit.remote('sudo -u apache rsync /tmp/core.iconic-intl.com-dist/ ' + shipit.config.deployTo + '/public/dist/ --delete -r', {tty: true}))
+            .then(() => shipit.remote('sudo rm -rf /tmp/test-intl.com-dist/', {tty: true}))
+            .then(() => shipit.copyToRemote('public/dist/*', '/tmp/test-intl.com-dist/'))
+            .then(() => shipit.remote('sudo -u apache rsync /tmp/test-intl.com-dist/ ' + shipit.config.deployTo + '/public/dist/ --delete -r', {tty: true}))
     }
 
     shipit.task('deploy-all', function () {
