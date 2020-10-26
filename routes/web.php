@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'HomeController@index')->name('home');
 Route::get('/eloquent', 'EloquentController@eloquent')->name('eloquent');
 Route::group(['prefix' => 'bootstrap'], function () {
     Route::get('/jum', 'BootstrapController@jum')->name('bootstrap.jum');
