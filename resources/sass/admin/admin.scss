@@ -1,0 +1,36 @@
+$sidebar-width-open: 125px;
+$sidebar-width-closed: 50px;
+$top-bar-height: 42px;
+
+.admin-wrapper {
+    .sidebar {
+        width: $sidebar-width-open;
+    }
+
+    .sidebar.close {
+        width: $sidebar-width-closed;
+    }
+
+    .top-bar {
+        height: $top-bar-height;
+    }
+
+    .admin-content {
+        height: calc(100vh - #{$top-bar-height});
+    }
+
+    .logo {
+        height: $top-bar-height;
+        font-size: 25px;
+    }
+
+    .sidebar-content {
+        .sidebar-heading {
+            font-size: 1.2rem;
+        }
+
+        .nav-link {
+            font-size: 1.1rem;
+        }
+    }
+}

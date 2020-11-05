@@ -23,3 +23,6 @@ $('.datepicker').datepicker({format: 'yyyy-mm-dd'});
 
 global.select2 = require('select2');
 
+$(document).ready(function() {
+    $('.js-select2').select2();
+});

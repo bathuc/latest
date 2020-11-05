@@ -20,3 +20,7 @@ Route::group(['prefix' => 'bootstrap'], function () {
     Route::get('/jum', 'BootstrapController@jum')->name('bootstrap.jum');
     Route::get('/class', 'BootstrapController@classUtility')->name('bootstrap.class');
 });
+
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/', 'AdminController@index')->name('admin.index');
+});

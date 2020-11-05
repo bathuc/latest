@@ -9,7 +9,6 @@ class TestController extends Controller
 {
     public function test()
     {
-
-        return view('home.index');
+        return view('test');
     }
 }

@@ -12,7 +12,7 @@
 
 </head>
 <body class="@yield('body-class')">
-    @include('shared.toast')
+    {{-- @include('shared.toast')--}}
 
     @yield('body')
 
