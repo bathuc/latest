@@ -18,11 +18,9 @@ $.ajaxSetup({headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('conten
 
 import moment from 'moment';
 global.moment = moment;
-
-$('.datepicker').datepicker({format: 'yyyy-mm-dd'});
-
 global.select2 = require('select2');
 
 $(document).ready(function() {
+    $('.datepicker').datepicker({format: 'yyyy-mm-dd'});
     $('.js-select2').select2();
 });
