@@ -1,5 +1,6 @@
 @extends('layouts.admin')
 
 @section('content')
-    Admin content
+    @include('admin.index._search-form')
+
 @endsection
