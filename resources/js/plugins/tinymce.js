@@ -25,6 +25,7 @@ require('tinymce/plugins/table');
 require('tinymce/plugins/paste');
 require('tinymce/plugins/help');
 require('tinymce/plugins/wordcount');
+require('tinymce/plugins/textcolor');
 
 require('tinymce/skins/ui/oxide/skin.min.css');
 require('tinymce/skins/ui/oxide/content.min.css');
@@ -42,9 +43,9 @@ tinymce.init({
     plugins: [
         'advlist autolink lists link image charmap print preview anchor',
         'searchreplace visualblocks code fullscreen',
-        'insertdatetime media table paste code help wordcount'
+        'insertdatetime media table paste code help wordcount textcolor'
     ],
-    toolbar: 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | code help',
+    toolbar: 'undo redo | formatselect | bold italic forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | code help | table',
     content_css: false,
     skin: false,
     setup: function (editor) {
