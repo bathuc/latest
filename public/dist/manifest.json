@@ -1,9 +1,9 @@
 {
-  "app.css": "app.1bda50e01c.css",
-  "app.js": "app.ed29a47cec.js",
+  "app.css": "app.ed9c4b1e24.css",
+  "app.js": "app.1b24d9d1f1.js",
   "manifest.js": "manifest.5222ac272b.js",
-  "tinymce.js": "tinymce.907d6d7ab8.js",
-  "vendors.css": "vendors.e03a96baf5.css",
-  "vendors.js": "vendors.3d4948e271.js",
+  "tinymce.js": "tinymce.54f3539b82.js",
+  "vendors.css": "vendors.78a447635a.css",
+  "vendors.js": "vendors.f85ce9285a.js",
   "fonts/app.scss": "fonts/fontawesome-webfont.woff2"
 }

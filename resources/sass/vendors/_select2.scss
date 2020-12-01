@@ -1,0 +1,60 @@
+@import "~select2/dist/css/select2";
+
+.select2.select2-container {
+    width: 100% !important; // When viewport is resized
+
+    &.select2-container--focus {
+        .select2-selection {
+            color: $input-focus-color;
+            background-color: $input-focus-bg;
+            border-color: $input-focus-border-color;
+            outline: 0;
+            // Avoid using mixin so we can pass custom focus shadow properly
+            @if $enable-shadows {
+                box-shadow: $input-box-shadow, $input-focus-box-shadow;
+            }
+            @else {
+                box-shadow: $input-focus-box-shadow;
+            }
+        }
+    }
+
+    .select2-selection--single {
+        height: 32px;
+        padding-top: 0;
+    }
+
+    .select2-selection {
+        border-radius: $border-radius;
+        border-color: $input-border-color;
+
+        .select2-selection__choice {
+            font-size: 1rem;
+            max-width: calc(100% - 20px);
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    color: #6c757c;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 30px;
+}
+
+.select2-container--default .select2-selection--multiple {
+    .select2-search__field {
+        color: #6c757c;
+    }
+
+    .select2-selection__choice {
+        margin-top: 4px;
+    }
+
+    .select2-selection__rendered {
+        padding: 0 10px;
+    }
+}

@@ -10,6 +10,7 @@
         "commander": "^3.0.1",
         "font-awesome": "^4.7.0",
         "jquery": "^3.4.1",
+        "jquery-datetimepicker": "^2.5.21",
         "js-cookie": "^2.2.1",
         "lazysizes": "^5.2.0-beta1",
         "moment": "^2.24.0",
@@ -41,9 +42,9 @@
         "select2": "^4.0.10",
         "stylelint": "^11.0.0",
         "stylelint-webpack-plugin": "^0.10.5",
-        "webpack": "^4.40.2",
-        "webpack-cli": "^3.3.9",
-        "webpack-manifest-plugin": "^2.0.4",
+        "webpack": "^4.42.1",
+        "webpack-cli": "^3.3.11",
+        "webpack-manifest-plugin": "^2.2.0",
         "webpack-merge": "^4.2.2"
     }
 }
