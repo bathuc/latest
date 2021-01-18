@@ -7,8 +7,14 @@ use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
-    public function test()
+    public function test(Request $request)
     {
+        if ($request->isMethod('post')) {
+            echo "<pre>";
+            print_r(htmlspecialchars($request->text));
+            echo "<pre>";
+            die();
+        }
         return view('test');
     }
 }

@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/test', 'TestController@test')->name('test');
+Route::match(['get', 'post'], '/test', 'TestController@test')->name('test');
 
 Route::get('/eloquent', 'EloquentController@eloquent')->name('eloquent');
 Route::group(['prefix' => 'bootstrap'], function () {
