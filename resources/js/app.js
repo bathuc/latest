@@ -24,3 +24,5 @@ $(document).ready(function() {
     $('.datepicker').datepicker({format: 'yyyy-mm-dd'});
     $('.js-select2').select2();
 });
+
+require('cleave.js');

@@ -7,6 +7,7 @@
     "dependencies": {
         "bootstrap": "^4.4.1",
         "chalk": "^2.4.2",
+        "cleave.js": "^1.6.0",
         "commander": "^3.0.1",
         "font-awesome": "^4.7.0",
         "jquery": "^3.4.1",
