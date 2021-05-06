@@ -24,3 +24,5 @@ Route::group(['prefix' => 'bootstrap'], function () {
 Route::group(['prefix' => 'admin'], function () {
     Route::get('/', 'AdminController@index')->name('admin.index');
 });
+
+Route::match(['get', 'post'], '/convert', 'HomeController@convertText')->name('convert-text');
