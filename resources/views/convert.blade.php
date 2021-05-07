@@ -7,5 +7,9 @@
         <button type="submit" class="btn btn-primary btn-submit mt-3">Submit</button>
     </form>
 
-    <pre class="mt-3">{!! $convertText !!}</pre>
+    <pre class="mt-3">
+        <p>-------------------</p><br>
+        {!! $convertText !!}
+        <br><p>-------------------</p>
+    </pre>
 @endsection
